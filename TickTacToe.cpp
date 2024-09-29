@@ -1,12 +1,19 @@
 ﻿#include <iostream>
 using namespace std;
 
+void IgnoreCinErr()
+{
+	if (cin.fail())
+	{
+		cin.clear();
+		std::cin.ignore(32767, '\n');
+	}
+}
+
 #include"input.h"
 #include"rand.h"
 #include"check.h"
 #include"map.h"
-
-
 
 int main()
 {
@@ -28,8 +35,9 @@ int main()
 	do
 	{
 		cin >> opponentSelection;
+		IgnoreCinErr();
 	}
-	while ((opponentSelection != 1) && (opponentSelection != 2));
+	while (opponentSelection != 1 && opponentSelection != 2);
 	system("cls");
 
 	// First render
