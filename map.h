@@ -8,8 +8,7 @@ void PrintMap(char map[3][3])
 		// Horizontal
 		for (int j = 0; j < 3; j++) {
 			// Print cell
-			if (map[j][i] != 'n') std::cout << map[j][i];
-			else std::cout << ' ';
+			std::cout << map[j][i];
 
 			// Print hor break
 			if (j < 2) std::cout << "|";
@@ -24,7 +23,7 @@ void ClearMap(char map[3][3])
 {
 	for (int i = 0; i < 3; i++) {
 		for (int j = 0; j < 3; j++) {
-			map[i][j] = 'n';
+			map[i][j] = ' ';
 		}
 	}
 }
@@ -38,7 +37,7 @@ bool SetMark(char map[3][3], int x, int y, char sym)
 	// Check for possible win
 	char status;
 	status = CheckStatus(map);
-	if (status != 'n')
+	if (status != ' ')
 	{
 		cout << "====================================\n";
 		cout << status << " has won!\n";

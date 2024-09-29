@@ -1,4 +1,4 @@
 ﻿  TickTacToe.cpp
-E:\Files_E\_CPP\TickTacToe\TickTacToe\TickTacToe.cpp(21,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
-E:\Files_E\_CPP\TickTacToe\TickTacToe\map.h(47,1): warning C4715: SetMark: значение возвращается не при всех путях выполнения
+E:\Files_E\_CPP\TickTacToe\TickTacToe\TickTacToe.cpp(20,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+E:\Files_E\_CPP\TickTacToe\TickTacToe\map.h(48,1): warning C4715: SetMark: значение возвращается не при всех путях выполнения
   TickTacToe.vcxproj -> E:\Files_E\_CPP\TickTacToe\x64\Debug\TickTacToe.exe

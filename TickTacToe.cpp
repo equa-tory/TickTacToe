@@ -51,7 +51,7 @@ int main()
 		{
 			x = InputX();
 			y = InputY();
-		} while (map[x][y] != 'n');
+		} while (map[x][y] != ' ');
 		moves++;
 		if (moves >= 9) {
 			cout << "Draw!\n";
@@ -69,7 +69,7 @@ int main()
 			{
 				x = RandomRange(0, 2);
 				y = RandomRange(0, 2);
-			} while (map[x][y] != 'n');
+			} while (map[x][y] != ' ');
 
 			isRunning = SetMark(map, x, y, 'o');
 			if (!isRunning) break;
@@ -81,7 +81,7 @@ int main()
 			{
 				x = InputX();
 				y = InputY();
-			} while (map[x][y] != 'n');
+			} while (map[x][y] != ' ');
 
 			isRunning = SetMark(map, x, y, 'o');
 			if (!isRunning) break;
