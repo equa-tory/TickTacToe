@@ -17,6 +17,7 @@ int main()
 	int x, y;
 	char map[3][3];
 	bool isRunning = true;
+	int moves = 0;
 
 
 	// Fill map with n (none)
@@ -43,6 +44,11 @@ int main()
 			x = InputX();
 			y = InputY();
 		} while (map[x][y] != 'n');
+		moves++;
+		if (moves >= 9) {
+			cout << "Draw!\n";
+			break;
+		}
 		
 		isRunning = SetMark(map, x, y, 'x');
 		if (!isRunning) break;
@@ -71,6 +77,11 @@ int main()
 
 			isRunning = SetMark(map, x, y, 'o');
 			if (!isRunning) break;
+		}
+		moves++;
+		if (moves >= 9) {
+			cout << "Draw!\n";
+			break;
 		}
 	}
 	
